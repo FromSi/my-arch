@@ -122,6 +122,12 @@ useradd -m -g users -G wheel,audio -s /bin/bash fromsi && passwd fromsi
 pacman -Syu && pacman -S --needed base-devel wget git yajl
 ```
 
+### [Установка NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
+NetworkManager нужен для сети, вот установка
+```
+pacman -S networkmanager && systemctl enable NetworkManager
+```
+
 ### [Установка yaourt](https://neblog.info/ustanovka-yaourt-v-arch-linux)
 Yaourt крутая вещь, но ее не желательно использовать
 ```
