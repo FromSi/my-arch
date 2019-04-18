@@ -119,7 +119,7 @@ useradd -m -g users -G wheel,audio -s /bin/bash fromsi && passwd fromsi
 ### Прочие зависимости
 Включим [multilib](https://wiki.archlinux.org/index.php/Multilib_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)).
 ```
-pacman -Syu && pacman -S --needed base-devel wget git yajl
+pacman -Syu && pacman -S --needed base-devel wget git yajl python python-pip
 ```
 
 ### [Установка NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
@@ -185,8 +185,14 @@ EndSection
 Либо автоматически настройка через команду `nvidia-xconfig`.
 
 ## [Настройка i3](https://wiki.archlinux.org/index.php/i3#i3status)
+Для начала скопируйте [всё содержимое](https://github.com/FromSi/my-arch-i3-nvidia-lts-efi/tree/master/arch-root/home/fromsi) в свою домашнюю директорию пользователя!
 ```
-yaourt -S polybar rofi rxvt-unicode firefox {... пишу}
+yaourt -S polybar rofi rxvt-unicode firefox nitrogen imagemagick mate-power-manager nerd-fonts-complete ttf-font-awesome ttf-roboto-mono {... пишу}
+```
+
+### [Установка pywal](https://github.com/dylanaraps/pywal/wiki/Installation)
+```
+pip3 install pywal
 ```
 ... пишу.
 ... пишу.
