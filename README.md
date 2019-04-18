@@ -192,7 +192,7 @@ yaourt -S polybar rofi rxvt-unicode firefox nitrogen imagemagick mate-power-mana
 
 ### [Установка pywal](https://github.com/dylanaraps/pywal/wiki/Installation)
 ```
-pip3 install pywal
+sudo pip3 install pywal
 ```
 ... пишу.
 ... пишу.
