@@ -1,0 +1,10 @@
+URxvt.scrollBar: false
+URxvt*font: xft:DejaVu Sans Mono:size=12
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.colorUL: #4682B4
+
+rofi.lines:   10
+rofi.columns: 2

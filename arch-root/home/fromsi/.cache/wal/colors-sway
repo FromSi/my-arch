@@ -1,0 +1,21 @@
+set $wallpaper /home/fromsi/.config/nitrogen/fon.jpg
+
+set $background #0e0f0f
+set $foreground #dcc4a9
+
+set $color0 #0e0f0f
+set $color1 #6A5038
+set $color2 #695146
+set $color3 #8B663B
+set $color4 #986D54
+set $color5 #768143
+set $color6 #B28A64
+set $color7 #dcc4a9
+set $color8 #9a8976
+set $color9 #6A5038
+set $color10 #695146
+set $color11 #8B663B
+set $color12 #986D54
+set $color13 #768143
+set $color14 #B28A64
+set $color15 #dcc4a9

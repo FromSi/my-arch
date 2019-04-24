@@ -1,2 +1,2 @@
-nitrogen --restore &
+wal -R &
 exec i3
