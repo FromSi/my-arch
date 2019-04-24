@@ -119,13 +119,17 @@ useradd -m -g users -G wheel,audio -s /bin/bash fromsi && passwd fromsi
 ### Прочие зависимости
 Включим [multilib](https://wiki.archlinux.org/index.php/Multilib_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)).
 ```
-pacman -Syu && pacman -S --needed base-devel wget git yajl python python-pip openssh
+pacman -Syu && pacman -S --needed base-devel wget git yajl python python-pip openssh zsh zsh-completions
 ```
 
 ### [Установка NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
 NetworkManager нужен для сети, вот установка
 ```
 pacman -S networkmanager && systemctl enable NetworkManager
+```
+### [Установить оболочку Zsh по умолчанию](https://wiki.archlinux.org/index.php/Command-line_shell_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)#%D0%92%D1%8B%D0%B1%D0%BE%D1%80_%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B8_%D0%BF%D0%BE_%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E)
+```
+chsh -s /bin/zsh
 ```
 
 ### [Установка yaourt](https://neblog.info/ustanovka-yaourt-v-arch-linux)
