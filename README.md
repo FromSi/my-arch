@@ -119,7 +119,7 @@ useradd -m -g users -G wheel,audio -s /bin/bash fromsi && passwd fromsi
 ### Прочие зависимости
 Включим [multilib](https://wiki.archlinux.org/index.php/Multilib_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)).
 ```
-pacman -Syu && pacman -S --needed base-devel wget git yajl python python-pip openssh
+pacman -Syu && pacman -S --needed base-devel wget git yajl python python-pip openssh vim
 ```
 
 ### [Установка NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
