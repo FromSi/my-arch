@@ -204,3 +204,6 @@ sudo pip3 install pywal
 ... пишу.
 ... пишу.
 ... пишу.
+
+## Screenshot
+![img](https://github.com/FromSi/my-arch-i3-nvidia-lts-efi/blob/master/screenshot/screenshot.png)
