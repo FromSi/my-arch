@@ -194,7 +194,7 @@ EndSection
 ## [Настройка i3](https://wiki.archlinux.org/index.php/i3#i3status)
 Для начала скопируйте [всё содержимое](https://github.com/FromSi/my-arch-i3-nvidia-lts-efi/tree/master/arch-root/home/fromsi) в свою домашнюю директорию пользователя!
 ```
-yaourt -S polybar gnome-screenshot rofi rxvt-unicode firefox nitrogen imagemagick mate-power-manager nerd-fonts-complete ttf-font-awesome ttf-roboto-mono {... пишу}
+yaourt -S polybar gnome-screenshot rofi rxvt-unicode-pixbuf firefox nitrogen imagemagick mate-power-manager nerd-fonts-complete ttf-font-awesome ttf-roboto-mono {... пишу}
 ```
 
 ### [Установка pywal](https://github.com/dylanaraps/pywal/wiki/Installation)
@@ -204,8 +204,3 @@ sudo pip3 install pywal
 ... пишу.
 ... пишу.
 ... пишу.
-
-
-
-
-
