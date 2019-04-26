@@ -8,6 +8,9 @@ source $ZSH/oh-my-zsh.sh
 
 BULLETTRAIN_TIME_12HR=true
 
+autoload -U compinit
+compinit
+
 BULLETTRAIN_PROMPT_ORDER=(
   time
   dir
