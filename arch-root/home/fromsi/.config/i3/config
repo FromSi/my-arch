@@ -11,6 +11,12 @@
 
 set $mod Mod4
 
+# Screenshot
+bindsym --release Print exec "gnome-screenshot -i"
+bindsym --release $mod+Print exec "gnome-screenshot -f ~/Screenshots/FULL/full_$(date +%Y-%m-%d-%H:%M:%S).png"
+bindsym --release Shift+Print exec "gnome-screenshot -a -f ~/Screenshots/FREE/free_.$(date +%Y-%m-%d-%H:%M:%S)png"
+bindsym --release $mod+Shift+Print exec "gnome-screenshot -wB -f ~/Screenshots/WIN/win_$(date +%Y-%m-%d-%H:%M:%S).png"
+
 # Gaps
 gaps inner 10
 gaps outer -4
