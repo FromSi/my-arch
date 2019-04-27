@@ -72,7 +72,7 @@ arch-chroot /mnt
 ```
 Сгенерируем часовой пояс
 ```
-ln -sf /usr/share/zoneinfo/Asia/Astana /etc/localtime && hwclock --systohc
+ln -sf /usr/share/zoneinfo/Asia/Almaty /etc/localtime && hwclock --systohc
 ```
 Локализация
 В файле `/etc/locale.gen` раскомментировать `en_US.UTF-8 UTF-8` и `ru_RU.UTF-8 UTF-8`.
