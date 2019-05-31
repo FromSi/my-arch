@@ -54,7 +54,8 @@ mount /dev/sdX1 /mnt
 ```
 
 ### [Выбор зеркал](https://wiki.archlinux.org/index.php/Installation_guide_(Русский)#Выбор_зеркал)
-Поставить конкретный серв в приоритет. Нужно открыть `nano /etc/pacman.d/mirrorlist`. Чтобы вырезать `CTRL + K`, чтобы вставить `CTRL + U`.
+Поставить конкретный серв в приоритет. Нужно открыть `nano /etc/pacman.d/mirrorlist`. 
+>Чтобы вырезать `CTRL + K`, чтобы вставить `CTRL + U`.
 
 ### [Установка основных пакетов](https://wiki.archlinux.org/index.php/Installation_guide_(Русский)#Установка_основных_пакетов)
 ```
@@ -128,28 +129,22 @@ NetworkManager нужен для сети, вот установка
 pacman -S networkmanager && systemctl enable NetworkManager
 ```
 
-### [Установка yaourt](https://neblog.info/ustanovka-yaourt-v-arch-linux)
-Yaourt крутая вещь, но ее не желательно использовать
+### [Установка yay](https://github.com/Jguer/yay#installation)
+Yet Another Yogurt - An AUR Helper Written in Go
 ```
 cd /tmp
-git clone https://aur.archlinux.org/package-query.git
-cd package-query
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
-cd ..
-git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
-sudo rm -dR yaourt package-query
 ```
 или одна строка
 ```
-cd /tmp && git clone https://aur.archlinux.org/package-query.git && cd package-query && makepkg -si && cd .. && git clone https://aur.archlinux.org/yaourt.git && cd yaourt && makepkg -si && cd .. && sudo rm -dR yaourt package-query
+cd /tmp && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ```
 
 ### [Установить оболочку Zsh по умолчанию](https://wiki.archlinux.org/index.php/Command-line_shell_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)#%D0%92%D1%8B%D0%B1%D0%BE%D1%80_%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B8_%D0%BF%D0%BE_%D1%83%D0%BC%D0%BE%D0%BB%D1%87%D0%B0%D0%BD%D0%B8%D1%8E)
 ```
-yaourt -S zsh zsh-completions && chsh -s /bin/zsh
+yay -S zsh zsh-completions && chsh -s /bin/zsh
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
@@ -194,16 +189,18 @@ EndSection
 ## [Настройка i3](https://wiki.archlinux.org/index.php/i3#i3status)
 Для начала скопируйте [всё содержимое](https://github.com/FromSi/my-arch-i3-nvidia-lts-efi/tree/master/arch-root/home/fromsi) в свою домашнюю директорию пользователя!
 ```
-yaourt -S polybar gnome-screenshot rofi rxvt-unicode-pixbuf firefox nitrogen imagemagick mate-power-manager nerd-fonts-complete ttf-font-awesome ttf-roboto-mono {... пишу}
+yay -S polybar gnome-screenshot rofi rxvt-unicode-pixbuf firefox nitrogen imagemagick mate-power-manager nerd-fonts-complete ttf-font-awesome ttf-roboto-mono {... пишу}
 ```
 
 ### [Установка pywal](https://github.com/dylanaraps/pywal/wiki/Installation)
 ```
 sudo pip3 install pywal
 ```
-... пишу.
-... пишу.
-... пишу.
+
+### Прочие зависимости AUR
+```
+yay -S npm visual-studio-code-bin android-studio telegram-desktop-bin intellij-idea-ce
+```
 
 ## Screenshot
 ![img](https://github.com/FromSi/my-arch-i3-nvidia-lts-efi/blob/master/screenshot/screenshot.png)
