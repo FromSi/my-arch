@@ -1,9 +1,0 @@
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <C-r><C-o>+
-
-filetype plugin on
-syntax on
-
-set number
